@@ -1,0 +1,35 @@
+{
+  "name": "mcp-verified-agent-loop",
+  "version": "1.0.0",
+  "description": "A recruiter-friendly MCP agent workflow demo with sandboxed tools, verification gates, diffs, audit logs, and human approval.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "demo": "tsx src/demo.ts",
+    "verify": "npm run typecheck && npm test && npm run demo -- --approve"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "developer-tools",
+    "typescript",
+    "verification",
+    "human-in-the-loop"
+  ],
+  "author": "Yuttakan Phunkhlang",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  }
+}
