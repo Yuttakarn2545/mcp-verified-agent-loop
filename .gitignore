@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.agent-workspace/
+.agent-runs/
+*.log
+.env
+.env.*
+!.env.example
